@@ -1,6 +1,6 @@
 # product-sales-website
 
-Este é um projeto desenvolvido usando html e CSS, voltado para venda de um produto, no caso um jogo. O mesmo possui quatro páginas distintas, podendo ser acessadas por meio de um navegador em formato de cabeçalho na versão desktop e no rodapé da página na versão mobile. Para aumentar a versatilidade das páginas criei apenas uma versão responsiva que atendessem tanto a dispositivos mobile quanto Ipads, deixando o código o mais enxuto e organizado possível.
+Este é um projeto desenvolvido usando html e CSS, voltado para venda de um produto, no caso um jogo. O mesmo possui quatro páginas distintas, podendo ser acessadas por meio de um navegador em formato de cabeçalho na versão desktop e no rodapé da página na versão mobile. Para aumentar a versatilidade das páginas criei apenas uma versão responsiva que atendessem tanto a dispositivos mobile quanto Ipads, deixando o código o mais sucinto e organizado possível.
 
 ## Tecnologias empregadas
 
@@ -40,7 +40,7 @@ Este é um projeto desenvolvido usando html e CSS, voltado para venda de um prod
 
 ## Desafios e aprendizados
 
-Neste projeto foi necessário empregar diversas formas de posicionamento para organização da página, o permitindo aplicar conceitos sobre display flex e grid e praticar formas de organizar meu código html para implementar corretamente o posicionamento dos itens dentro do CSS. Também foi necessário usar diversos formatos de media (vídeos, imagens e gifs) e analisar as formas mais limpas e adequadas de inseri-los no código, além de explorar diversos conceitos de efeitos visuais usando o :hover e como adaptar essas funcionalidades para a versão mobile mantendo a interatividade e deixando os recursos intuitivos para o usuário.
+Neste projeto foi necessário empregar diversas formas de posicionamento para organização da página, permitindo aplicar conceitos sobre display flex e grid e praticar formas de organizar meu código html para implementar corretamente o posicionamento dos itens dentro do CSS. Também foi necessário usar diversos formatos de media (vídeos, imagens e gifs) e analisar as formas mais limpas e adequadas de inseri-los no código, além de explorar diversos conceitos de efeitos visuais usando o :hover e como adaptar essas funcionalidades para a versão mobile mantendo a interatividade e deixando os recursos intuitivos para o usuário.
 
 ## Autor
 
