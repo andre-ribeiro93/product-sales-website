@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+li {
+    list-style: none;
+    color: #02a167;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #59ffaa;
+    text-shadow: 0 0 20px #59ffaa;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#banner {
+    background-image: url('../medias/zelda-tearskingdom-artwork-01-3840x2160-1.jpg');
+    background-position: 50% 45%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+}
+
+#trailer-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+    height: 100%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #02a167;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 90%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #02a167;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #59ffaa;
+    color: #02a167;
+    box-shadow: 0 0 20px #59ffaa;
+    border-radius: 5px;
+}
+
+footer {
+    height:100%;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+}
+
+#logo2 {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: #02a167;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 10px;
+}
+
+.footer-navigation {
+    display: none; /*servirá para deixar o elemento oculto, pois só será exibidos em dispositivos mobile*/
+}
+
+.footer-list {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 810px) {
+    .footer-navigation {
+        display: block; /*para habilitar o display navigation nos dispositivos mobile*/
+    }
+
+    nav {
+        display: none; /*para desabilitar a navegação da barra superior quando executado em dispositivos mobile*/
+    }
+
+    #banner {
+        background-position: 100%;
+        width: 100%;
+        height: 300px;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0 0 0;
+    }
+
+    .description {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+li {
+    list-style: none;
+    color: #02a167;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #59ffaa;
+    text-shadow: 0 0 20px #59ffaa;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.world-cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width:85%;
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 65%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 25px 20px;
+    font-size: 25px;
+    color: #59ffaa;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #59ffaa;
+    border-radius: 5px;
+}
+
+.banner1 {
+    background-image: url('../medias/islands-the-legend-of-zelda-tears-of-the-kingdom-sky.jpg');
+}
+
+.banner2 {
+    background-image: url('../medias/islands-the-legend-of-zelda-tears-of-the-kingdom-surface.jpg');
+}
+
+.banner3 {
+    background-image: url('../medias/islands-the-legend-of-zelda-tears-of-the-kingdom-depths.jpg');
+}
+
+/*nesse caso o name e description servem para todos os banners*/
+.name {
+    opacity: 0;
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0px 0px 20px #183048;
+    color: #59ffaa;
+    background:none;
+    transition: 1s;
+}
+.description {
+    opacity: 0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 20px -20px 0;
+    font-size: 22px;
+    color: #59ffaa;
+    background-color: #183048;
+    text-align: justify;
+    transition: 1s;
+}
+
+.card:hover .name {
+    opacity: 1;
+}
+.card:hover .description {
+    opacity: 1;
+}
+
+footer {
+    height:100%;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+}
+
+#logo2 {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: #02a167;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 10px;
+}
+
+.footer-navigation {
+    display: none; /*servirá para deixar o elemento oculto, pois só será exibidos em dispositivos mobile*/
+}
+
+.footer-list {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-checkbox {
+    display: none;
+}
+
+.rotulo {
+    display: none;
+}
+
+@media(max-width: 810px) {
+    .footer-navigation {
+        display: block; /*para habilitar o display navigation nos dispositivos mobile*/
+    }
+
+    nav {
+        display: none; /*para desabilitar a navegação da barra superior quando executado em dispositivos mobile*/
+    }
+
+    .world-cards-container {
+        margin-top: 20px;
+    }
+    
+    .card {
+        width: 95%;
+        cursor: default;
+    }
+
+    .banner1 {
+        background-position: 29%;
+    }
+
+    .banner2 {
+        background-position: 70%;
+    }
+
+    .banner3{
+        background-position: 28%;
+    }
+
+    .rotulo {
+        cursor: pointer;
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 0px 0px 20px #183048;
+        color: #59ffaa;
+        background:none;
+    }
+
+    .rotulo::after {
+        content: '[+]';
+        font-size: 15px;
+        margin: 5px;
+    }
+    .name {
+        display: none;
+    }
+
+    .description {
+        display: none;
+        text-align: left;
+        padding: 15px;
+        margin: 0 5px -20px -15px;
+    }
+
+    .input-checkbox {
+        display: none;
+    }
+
+    .input-checkbox:checked + .rotulo + .name + .description {
+        opacity: 1;
+        display: block;
+    }
+
+}

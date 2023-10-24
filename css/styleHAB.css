@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+li {
+    list-style: none;
+    color: #02a167;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #59ffaa;
+    text-shadow: 0 0 20px #59ffaa;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1::after {
+    content: ' -';
+}
+
+h1::before {
+    content: '- ';
+}
+
+#title-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title-content {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px double #02a167;
+    border-radius: 5px;
+    background-color: #183048;
+}
+
+.title {
+    color:#59ffaa;
+    font-size: 40px;
+    background: none;
+}
+
+.page-description {
+    color: #59ffaa;
+    font-size: 25px;
+    background: none;
+}
+
+#abilities-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.content {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 5px double #02a167;
+    background: none;
+}
+
+#sinopse {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background: none;
+}
+
+.habilidade {
+    color: #59ffaa;
+    margin-bottom: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    background: none;
+}
+
+.line {
+    color: #59ffaa;
+    margin: -20px 0 20px 0;
+    width: 100%;
+    text-align: center;
+    background: none;
+}
+
+.description {
+    width: 100%;
+    height: auto;
+    color: #02a167;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    background: none;
+}
+
+footer {
+    height:100%;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+}
+
+#logo2 {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: #02a167;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 10px;
+}
+
+#abilities-container-mob {
+    display: none;
+}
+
+.footer-navigation {
+    display: none; /*servirá para deixar o elemento oculto, pois só será exibidos em dispositivos mobile*/
+}
+
+.footer-list {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 810px) {
+    .footer-navigation {
+        display: block; /*para habilitar o display navigation nos dispositivos mobile*/
+    }
+
+    nav {
+        display: none; /*para desabilitar a navegação da barra superior quando executado em dispositivos mobile*/
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h1::after {
+        content: none;
+    }
+
+    h1::before {
+        content: none;
+    }
+
+    #title-container {
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+
+    #abilities-container {
+        display: none;
+    }
+
+    #abilities-container-mob {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .line {
+        margin-bottom: -5px;
+    }
+
+    .gif {
+        border: none;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
