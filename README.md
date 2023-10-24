@@ -1,4 +1,4 @@
-# product-sales-web
+# product-sales-website
 
 Este é um projeto desenvolvido usando html e CSS, voltado para venda de um produto, no caso um jogo. O mesmo possui quatro páginas distintas, podendo ser acessadas por meio de um navegador em formato de cabeçalho na versão desktop e no rodapé da página na versão mobile. Para aumentar a versatilidade das páginas criei apenas uma versão responsiva que atendessem tanto a dispositivos mobile quanto Ipads, deixando o código o mais enxuto e organizado possível.
 
