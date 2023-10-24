@@ -10,7 +10,7 @@ Este é um projeto desenvolvido usando html e CSS, voltado para venda de um prod
 </div>
 
 ## Link
-- Site URL: https://andre-ribeiro93.github.io/teste/
+- Site URL: https://andre-ribeiro93.github.io/product-sales-website/
 
 ## Desktop screenshots
 
